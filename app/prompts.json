@@ -1,0 +1,26 @@
+[
+  {
+    "type": "checkbox",
+    "message": "Select repositories to collect",
+    "name": "repositories",
+    "choices": [
+      {
+        "name": "Github",
+        "value": "github",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "theme",
+    "message": "Choose your theme" ,
+    "choices": [
+      {
+        "name": "twitter.github.io",
+        "value": "twitter",
+        "checked": true
+      }
+    ]
+  }
+]

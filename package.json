@@ -1,0 +1,49 @@
+{
+  "name": "generator-codepolio",
+  "version": "0.2.1",
+  "description": "Build portfolio website with your repositories",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "miconblog/generator-codepolio",
+  "author": [
+    {
+      "name": "Byungdae Sohn",
+      "email": "miconblog@gmail.com",
+      "url": "http://miconblog.com/"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "codepolio"
+  ],
+  "bugs": {
+    "url": "https://github.com/miconblog/generator-codepolio/issues"
+  },
+  "homepage": "https://github.com/miconblog/generator-codepolio",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "q": "^1.5.1",
+    "request": "^2.88.2",
+    "yeoman-generator": "^4.7.2",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.2",
+    "mocha": "^7.1.1"
+  },
+  "peerDependencies": {
+    "yo": "^3.1.1"
+  }
+}

@@ -1,0 +1,191 @@
+/** search bar */
+#search {
+	margin-bottom: 20px;
+}
+
+#search input[type="text"] {
+	width: 50%;
+    background: url(assets/images/search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    //font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    padding: 6px 15px 6px 35px;
+    border-radius: 10px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    transition: all 0.3s ease 0s;
+ }
+
+#search input[type="text"]:focus {
+	width: 70%;
+	outline: none;
+}
+
+
+/* main */
+#main, div.header, li.repo {
+	height: 400px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+
+	h1 {
+		margin: 30px 20px 10px 20px;
+	}
+
+	h1, p {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.profile img{
+		width: 160px;
+		border-radius: 5px;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.footer {
+		position: absolute;
+		bottom: 20px;
+		width: 220px;
+	}
+}
+
+div.header {
+	text-align: left;
+	h1, p {
+		margin: 10px 15px 0;
+	}
+	height: 130px;
+}
+
+#num-repos, #num-members {
+	font-weight: bold;
+	font-size: 14px;
+	color: #0084b4;
+	line-height: 15px;
+}
+
+#recently-updated-repos {
+	margin-left: 15px;
+}
+
+#recently-updated h1 a {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.grid {
+	.grid-1 {
+		width: 220px;
+	}
+	.grid-2 {
+		width: 460px;
+	}
+	.grid-3 {
+		width: 700px;
+	}
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.alpha {
+	margin-left: 0px;
+}
+.omega {
+	margin-right: 0px;
+}
+
+li.repo {
+	text-align: left;
+	height: 250px;
+
+	.github {
+		display: inline-block;
+		position: relative;
+		top: 8px;
+		width: 32px;
+		height: 32px;
+		margin-right: 5px;
+		opacity: 0.7;
+		background-image: url("assets/images/github-mark.png"); 
+		background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center center;
+	}
+
+	h2, h3, p {
+		margin: 10px 15px;
+	}
+
+	h3 {
+		font-size: 11px;
+	  	margin-top: 2px;
+	  	margin-bottom: 15px;
+	  	color: #999;
+	}
+
+	> a {
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	  text-decoration: none;
+	  color: inherit;
+	}
+
+	a:hover {
+	  background: #efefef;
+	  background: rgba(0, 0, 0, 0.05);
+	}
+
+	div.info {
+		position: absolute;
+		bottom: 0;
+		height: 40px;
+		width: 100%;
+		border-top: 1px solid #ccc;
+
+		p {
+			//position: absolute;
+			float: right;
+			font-weight: bold;
+			font-size: 12px;
+
+			&.watch {
+				left: 0px;
+			}
+			&.star {
+				left: 72px;
+			}
+			&.fork {
+				right: 0px;
+			}
+		}
+	}
+}
+
+
+.repo.javascript:after {
+	border-right-color: #333;
+}
+
+.repo:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid transparent;
+	border-left: 50px solid transparent;
+	border-right: 50px solid #0080b0;
+	pointer-events: none;
+}
